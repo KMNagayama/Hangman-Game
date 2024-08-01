@@ -1,0 +1,74 @@
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
+:root {
+    --color1: #ffffff;
+    --color2: #FFC800;
+
+    --font1: 'ArcadeClassic', sans-serif;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body {
+    background: rgb(0,162,255);
+    background: linear-gradient(180deg, rgba(0,162,255,1) 35%, rgba(107,239,254,1) 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 79px;
+}
+
+.title-themes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color1);
+    gap: 17px;
+}
+
+.title-themes__h1 {
+    font-size: 100px;
+    text-shadow: 10px 10px 5px #3183BC;
+}
+
+.title-themes__p {
+    font-size: 31.5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.buttons-themes {
+    height: 168px;
+    width: 316px;
+    font-size: 27px;
+    background-color: var(--color2);
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 7px #B28C00;
+    cursor: pointer;
+}
+.buttons-themes:active {
+    box-shadow: 0 2px transparent;
+    transform: translateY(5px);
+}
+
+footer {
+    background: url('/img/terra.png');
+    height: 100px;
+}

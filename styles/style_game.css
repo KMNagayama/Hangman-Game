@@ -1,0 +1,136 @@
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
+:root {
+    --color1: #000000;
+    --color2: #FFC800;
+
+    --font1: 'ArcadeClassic', sans-serif;
+    ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body {
+    background: rgb(0, 162, 255);
+    background: linear-gradient(180deg, rgba(0, 162, 255, 1) 35%, rgba(107, 239, 254, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--color2);
+    padding: 100px;
+    border: 10px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.word-display {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter {
+    width: 28px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    border-bottom: 3px solid black;
+}
+
+.letter.guessed {
+    border-color: transparent;
+    margin: -40px 0 35px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+b {
+    color: #ff0000;
+}
+
+.letters {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#testar-letra {
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.botao-adivinhar {
+    padding: 5px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#new-game-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#new-game-button:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    background: url('/img/terra.png');
+    height: 100px;
+}
