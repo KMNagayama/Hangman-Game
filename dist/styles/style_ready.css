@@ -1,0 +1,80 @@
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
+:root {
+    --color1: #000000;
+    --color2: #FFC800;
+
+    --font1: 'ArcadeClassic', sans-serif;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body {
+    background: rgb(0,162,255);
+    background: linear-gradient(180deg, rgba(0,162,255,1) 35%, rgba(107,239,254,1) 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__ready {
+    font-size: 100px;
+    color: #FFFFFF;
+    text-shadow: 10px 10px 5px #3183BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+}
+
+#images-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-moeda {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.button-play {
+    font-size: 24.3px;
+    color: #000000;
+    background-color: #FFC800;
+    padding: 25px 71px 25px 71px;
+    border: 5px solid #000000;
+    border-radius: 100px;
+    box-shadow: 5px 5px 7px #B28C00;
+    cursor: pointer;
+}
+
+.button-play:active {
+    box-shadow: 0 2px transparent;
+    transform: translateY(5px);
+}
+
+footer {
+    background: url('/img/terra.png');
+    height: 100px;
+}
+

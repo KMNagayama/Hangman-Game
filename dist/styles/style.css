@@ -1,0 +1,111 @@
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
+:root {
+    --color1: #000000;
+    --color2: #FFC800;
+
+    --font1: 'ArcadeClassic', sans-serif;;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body {
+    background: rgb(0,162,255);
+    background: linear-gradient(180deg, rgba(0,162,255,1) 35%, rgba(107,239,254,1) 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+.title {
+    font-size: 150px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 406px;
+    left: 610px;
+    text-shadow: 10px 10px 5px #3183BC;
+}
+
+.button-play {
+    display: flex;
+    text-decoration: none;
+    font-size: 24.3px;
+    color: #000000;
+    background-color: #FFC800;
+    padding: 25px 71px 25px 71px;
+    border: 5px solid #000000;
+    border-radius: 100px;
+    box-shadow: 5px 5px 7px #B28C00;
+    cursor: pointer;
+    position: absolute;
+    top: 614px;
+    left: 745px;
+}
+
+.button-play:active {
+    box-shadow: 0 2px transparent;
+    transform: translateY(5px);
+}
+
+.bloco-tijolo1 {
+    position: absolute;
+    top: 406px;
+    left: 156px;
+}
+
+.bloco-tijolo2 {
+    position: absolute;
+    top: 406px;
+    left: 256px;
+}
+
+.estrela {
+    position: absolute;
+    top: 305px;
+    left: 256px;
+}
+
+.arvore {
+    position: absolute;
+    height: 292px;
+    width: 231px;
+    top: 604px;
+    left: 108px;
+}
+
+.mario {
+    position: absolute;
+    height: 150px;
+    width: 116px;
+    top: 765px;
+    left: 385px;
+}
+
+.cogumelo {
+    position: absolute;
+    top: 792px;
+    left: 1013px;
+}
+
+.bowser {
+    position: absolute;
+    top: 293px;
+    left: 1300px;
+    height: 600px;
+    width: 600px;
+}
+
+footer {
+    background: url('/dist/img/terra.png');
+    height: 100px;
+}

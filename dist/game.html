@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+    <link rel="stylesheet" href="styles/style_game.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="container__hangman-box">
+                <img id="hangman-img" src="img/hangman-0.svg" alt="hangman-img">
+                <h1>Hangman Game</h1>
+            </div>
+            <div class="container__game">
+                <ul class="word-display">
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter guessed">a</li>
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                </ul>
+                <h4 class="game-dica">Dica: <span id="word-hint"></span></h4>
+                <h4 class="game-errors">
+                    Letras incorretas:
+                    <b>0 / 6</b>
+                </h4>
+                <div class="incorrect-letters">
+                </div>
+                <div class="letters">
+                    <input type="text" name="testar-letra" id="testar-letra" maxlength="1">
+                    <button class="botao-adivinhar">Adivinhar</button>
+                </div>
+            </div>
+            <div id="game-over-modal" class="modal">
+                <div class="modal-content">
+                    <h2 id="game-over-message"></h2>
+                    <button id="new-game-button">Novo Jogo</button>
+                </div>
+            </div>            
+        </div>
+
+        <script src="main/game.js"></script>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
